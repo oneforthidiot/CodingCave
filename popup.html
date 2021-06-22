@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CodingCave</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* Modal Structure */
+
+      html,
+      body {
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px;
+        margin: 0;
+        min-height: 180px;
+        padding: 0;
+        width: 384px;
+      }
+
+      h1 {
+        font-family: "Menlo", monospace;
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0;
+        color: #2f5876;
+      }
+
+      a:link {
+      color: green;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+      /* a:visited {
+      color: pink;
+      background-color: transparent;
+      text-decoration: none;
+    } */
+
+      a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+      a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+      }
+
+      img {
+        width: 80px;
+      }
+
+      .modal-header {
+        align-items: center;
+        border-bottom: 0.5px solid #dadada;
+      }
+
+      .modal-content {
+        padding: 0 22px;
+      }
+
+      .modal-icons {
+        border-top: 0.5px solid #dadada;
+        /* height: 50px;
+        width: 100%; */
+      }
+
+      .logo {
+        padding: 16px;
+      }
+
+      .logo-icon {
+        vertical-align: text-bottom;
+        margin-right: 12px;
+      }
+
+      .version {
+        color: #444;
+        font-size: 18px;
+      }
+
+      .flex-container {
+        /* display: flex;  */
+        justify-content: space-between;
+        padding: 10px 22px;
+      }
+
+      .flex {
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out;
+        /* width: 120px; */
+        font-size: 5;
+      }
+
+      .flex:hover {
+        opacity: 0.4;
+      }
+
+      .flex .fa {
+        font-size: 40px;
+        color: #2f5876;
+      }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+
+  <body>
+    <div class="modal-header">
+      <h1 class="logo">
+        <img class="logo-icon" src="images/icon.png" width=30px/>CodingCave
+        <span class="version">(1.0.0)</span>
+      </h1>
+    </div>
+    <div class="modal-content">
+      <p>All your coding sites at one place</p>
+    </div>
+    <div class="modal-icons">
+      <div class="flex-container">
+        <table border = 0 bordercolor = grey align = center>
+          <tr>
+              <td colspan = 2><img src="images/codeforces.png" alt="" border=3 height=100 width=100></img></td>
+              <td colspan = 2><a href="https://www.codeforces.com" target="_blank">CodeForces
+                </a></th>
+          </tr>
+          <tr>
+              <td colspan = 2><img src="images/codechef.png" alt="" border=3 height=100 width=100></img></td>
+              <td colspan = 2><a href="https://www.CodeChef.com" target="_blank">CodeChef
+              </a></th>
+          </tr>
+          <tr>
+              <td colspan = 2><img src="images/gfg.png" alt="" border=3 height=100 width=100></img></td>
+              <td colspan = 2><a href="https://www.geeksforgeeks.org" target="_blank">GeeksForGeeks
+              </a></th>
+          </tr>
+          <tr>
+              <td colspan = 2><img src="images/LeetCode.png" alt="" border=3 height=100 width=100></img></td>
+              <td colspan = 2><a href="https://www.leetcode.com" target="_blank">LeetCode
+              </a></th>
+          </tr>
+        <!-- <div class="flex">
+          <a href="https://www.CodeChef.com" target="_blank">CodeChef
+            <img src="images/codechef.png" width="50" height="50"/>
+          </a>
+        </div>
+        <div class="flex">
+          <a href="https://www.codeforces.com" target="_blank">CodeForces
+            <img src="images/codeforces.png" />
+          </a>
+        </div>
+        <div class="flex">
+          <a href="https://www.geeksforgeeks.org" target="_blank">GFG
+            <img src="images/gfg.png" />
+          </a>
+        </div>
+        <div class="flex">
+          <a href="https://leetcode.com" target="_blank">LeetCode
+            <img src="images/LeetCode.png" />
+          </a>
+        </div> -->
+        <!-- <div class="flex">
+          <a href="#" target="_blank">
+            <i class="fa fa-github" style="color:darksalmon "></i>
+          </a>
+        </div> -->
+      </div>
+    </div>
+  </body>
+</html>
